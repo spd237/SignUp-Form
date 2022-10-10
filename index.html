@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="content">
+        <button class="try-it-btn">
+          <span class="try-it-btn-text">Try it free 7 days </span>then $20/mo.
+          thereafter
+        </button>
+
+        <section class="form">
+          <div class="input">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+              id="firstName"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="error-icon hidden"
+            />
+            <span class="error-msg hidden">Error Message</span>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+              id="lastName"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="error-icon hidden"
+            />
+            <span class="error-msg hidden">Error Message</span>
+          </div>
+          <div class="input">
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Address"
+              required
+              id="email"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="error-icon hidden"
+            />
+            <span class="error-msg hidden">Error Message</span>
+          </div>
+          <div class="input">
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Password"
+              required
+              id="password"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="error-icon hidden"
+            />
+            <span class="error-msg hidden">Error Message</span>
+          </div>
+          <button class="claim-trial-btn">CLAIM YOUR FREE TRIAL</button>
+          <p class="agreement">
+            By clicking this button you are agreeing to our
+            <span class="terms-services"> Terms and Services</span>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

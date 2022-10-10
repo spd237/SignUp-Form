@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Red);
+}
+
+.container {
+  padding: 1rem;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heading {
+  color: white;
+}
+h1 {
+  line-height: 2.5rem;
+  margin: 3rem auto 1.5rem auto;
+  font-size: 1.75rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.try-it-btn {
+  color: white;
+  background-color: var(--Blue);
+  border: none;
+  padding: 1rem 4.75rem;
+  margin: 2.25rem auto 1.25rem auto;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  box-shadow: 0px 7px 1px 0px rgba(79, 77, 77, 0.225);
+}
+.try-it-btn-text {
+  font-weight: 700;
+}
+
+.form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px 1px 0px rgba(79, 77, 77, 0.225);
+}
+.input-field {
+  padding: 0.8rem 0.65rem;
+  font-weight: 600;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 0.3rem;
+  display: block;
+  width: 100%;
+}
+
+.claim-trial-btn {
+  color: white;
+  background-color: var(--Green);
+  border-style: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.claim-trial-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.agreement {
+  color: var(--Grayish-Blue);
+  font-size: 0.7rem;
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.terms-services {
+  color: var(--Red);
+}
+.terms-services:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.input {
+  position: relative;
+}
+.error-icon {
+  max-width: 20px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  opacity: 0;
+}
+.error-msg {
+  font-size: 12px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  color: var(--Red);
+  opacity: 0;
+}
+.error {
+  border-color: var(--Red);
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url(./images/bg-intro-desktop.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 3rem;
+  }
+  .heading {
+    text-align: left;
+    max-width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .description {
+    font-size: 1.05rem;
+  }
+}
